@@ -1,0 +1,358 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;   
+    /* overflow-x: hidden; */
+}
+
+/* head css start */
+
+
+ 
+ .mainnavbar{
+  width:100% ;
+  
+  background-color:#d4490960  ;
+} 
+
+.toplogo{
+width: 190px;
+}
+
+
+
+ul>li>a{
+    color: rgb(255, 255, 255) !important;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* head css closed */
+
+
+/* slider css start */
+body {
+  overflow-x: hidden ;
+
+  font-family: "Lora", serif ;
+  font-optical-sizing: auto ;
+  font-size: 14px ;
+  color: #000 ;
+  margin: 0 ;
+  padding: 0 ;
+  /* scroll-behavior: smooth ; */
+}
+
+
+.swiper-slide {
+  text-align: center ;
+  font-size: 1px ;
+
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  /* filter: brightness(0.5); */
+}
+
+.swiper-slide img {
+  display: block ;
+  width: 100% ;
+  height: 100vh ;
+  object-fit: cover ;
+  /* overflow: hidden; */
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background:rgba(206, 206, 206, 0.233) ;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: xx-large;
+  letter-spacing: 0;
+  color: transparent;
+}
+
+/* slider css End */
+
+
+
+
+/* about section started  */
+
+
+.abouthead{
+  font-family: "DM Serif Text", serif;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 5rem !important ;
+}
+.abouthead>hr{
+  height: 2px;
+  width: 40px;
+  margin: auto;
+  color: #ff6a00;
+  border-radius: 10px;
+}
+
+.aboutpra>p{
+  text-align: left ;
+  font-family: math;
+  line-height: inherit;
+  font-size:14px;
+  /* margin-top: 13px; */
+}
+
+
+.aboutimg>img{
+  height: 90%;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+/* about section end  */
+
+
+
+/* our service started  */
+
+.servicemain{
+  margin-top:10rem;
+}
+.sechead{
+  font-family: "DM Serif Text", serif;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  
+}
+.sechead>hr{
+  height: 2px;
+  width: 40px;
+  margin: auto;
+  color: #ff6a00;
+  border-radius: 10px;
+}
+
+.sertopicon{
+  width:100px;
+  height:100px;
+
+  border-radius:50%;
+  border: #ff8d3b 2px solid;
+  
+}
+.sertopicon>i{
+  position: relative;
+  top:50%;
+  left:23%;
+  transform: translate(-50%,-50%);
+  font-size: 2rem;
+
+}
+
+
+
+.secpar>p{
+  font-family: math;
+}
+
+
+
+
+
+/* our service end  */
+
+
+
+/* gallery css started */
+.gallerymain{
+  width:100%;
+  /* height:100vh; */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  /* background-color: rgb(255, 219, 172); */
+  margin-top: 6rem !important ;
+}
+
+.galleryhead{
+  font-family: "DM Serif Text", serif;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.galleryhead>hr{
+  height: 2px;
+  width: 40px;
+  margin: auto;
+  color: #ff7b00;
+  border-radius: 10px;
+}
+
+.media {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  /* background-color: antiquewhite; */
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.397);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.media:hover .overlay {
+  opacity: 1;
+}
+
+.gimages {
+  width: 100%;
+  height:200px;
+  z-index: -1;
+  margin: auto;
+  transform: scale(1);
+  transition: all ease-in-out 0.5s;
+}
+
+.media:hover .gimages {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+
+.image-details {
+  text-align: center;
+  color: #fffeffcc;
+  font-size: 20px;
+  z-index: 4;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+}
+
+.media:hover .image-details {
+  top: 40%;
+  opacity: 1;
+}
+
+/* gallery css closed  */
+
+
+
+
+
+
+
+/* testimonal start  */
+
+.testihead>hr{
+  height: 2px;
+  width: 40px;
+  margin: auto;
+  color: #ff7b00;
+  border-radius: 10px;
+}
+
+.testiimags{
+  width:80px;
+border-radius: 50%;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  flex: 1;
+}
+.testimonial {
+  /* box-shadow: 4px 2px 5px 3px rgb(0 0 0 / 40%); */
+  /* background-color: rgba(212, 73, 9, 0.376); */
+  border:2px rgba(212, 73, 9, 0.376);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ------testimonial  close-------*/
+
+
+
+
+/* footer css start */
+.mainfooter{
+  width:100%;
+  color: #fffbfb;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  background-color:#d4490960;
+  margin-top: 10rem !important ;
+}
+
+.footer-copyright {
+  background-color:#dd6e3b60;
+  color: #fff;
+  padding: 15px 30px;
+text-align: center;
+}
+
+
+.footer-copyright-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.footer-copyright-text {
+color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.footer-copyright-text>a:hover{
+  color: #ffffff;
+}
+
+.footer-copyright-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+/* footer css end  */
+
+
+
